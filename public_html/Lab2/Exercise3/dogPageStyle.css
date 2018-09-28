@@ -1,0 +1,35 @@
+img.profilepic
+{
+     opacity: 0.5;
+     border-style: solid;
+     border-width: 3px;
+}
+
+img.profilepic:hover
+{
+     border-color: green;
+     opacity: 1;
+}
+
+p.Introduction
+{
+     background-color: green;
+     color: white;
+     font-size: 24pt;
+     font-weight: bold;
+}
+
+p.Information
+{
+     background-color: green;
+     color: white;
+     font-family: serif;
+}
+
+body
+{
+     background-image: url(nature1.jpg);
+     background-size: 100%;
+     background-repeat: no-repeat;
+     background-attachment: scroll;
+}
