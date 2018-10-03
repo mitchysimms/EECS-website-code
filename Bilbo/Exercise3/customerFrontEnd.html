@@ -1,0 +1,124 @@
+<html>
+<head>
+
+     <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+     <h1> Puppy Store </h1>
+
+
+
+     <form name="shoppingForm" action="customerBackEnd.php" onsubmit="return checkCart() "method="post">
+
+     <div class="grid-container">
+
+          <!-- Store items -->
+
+          <img class="grid-item" id="storeItem1Picture" src="dog_Images/golden_Retreiver.jpg">
+          <div class="grid-item" id="storeItem1Description">
+               Golden Retriever: $250
+          </div>
+          <button type="button" onclick="addItem1toCart()">Add to Cart</button>
+
+
+
+          <img class="grid-item" id="storeItem2Picture" src="dog_Images/bulldog.jpeg">
+          <div class="grid-item" id="storeItem2Description">
+               Bulldog: $200
+          </div>
+          <button type="button" onclick="addItem2toCart()">Add to Cart</button>
+
+
+          <img class="grid-item" id="storeItem3Picture" src="dog_Images/brown_pup.jpg">
+          <div class="grid-item" id="storeItem3Description">
+               Lab/Retreiver Mix: $150
+          </div>
+          <button type="button" onclick="addItem3toCart()">Add to Cart</button>
+
+
+
+          <img class="grid-item" id="storeItem4Picture" src="dog_Images/corgi.jpg">
+          <div class="grid-item" id="storeItem4Description">
+               Corgi: $350
+          </div>
+          <button type="button" onclick="addItem4toCart()">Add to Cart</button>
+
+
+
+          <img class="grid-item" id="storeItem5Picture" src="dog_Images/fluffball.jpg">
+          <div class="grid-item" id="storeItem5Description">
+               Hamster/Poodle Mix: $7
+          </div>
+          <button type="button" onclick="addItem5toCart()">Add to Cart</button>
+
+
+
+          <img class="grid-item" id="storeItem6Picture" src="dog_Images/tortoise.jpg">
+          <div class="grid-item" id="storeItem6Description">
+               Saharan Tree Dog: $1000
+          </div>
+          <button type="button" onclick="addItem6toCart()">Add to Cart</button>
+
+
+     </div> <br> <br>
+
+     Your cart contains:
+     <div id="amountOfItems"></div> items. <br>
+
+     Total cost: $
+     <div id="costOfItems"></div> <br> <br>
+
+     <button type="button" onclick="clearCart()">Clear Cart</button> <br> <br>
+
+          <!-- User creation -->
+          <fieldset>
+               <legend>Enter User Credentials</legend>
+
+               <label>Email address:</label>
+               <input name="email" type="email" required="required" id="user_email" placeholder="your_email@domain.com" />
+
+               <label>Password:</label>
+               <input name="userPassword" type="password" required="required" id="user_password"></input>
+
+          </fieldset>
+
+          <!-- Shipping options -->
+
+          <fieldset>
+               <legend>Shipping Information</legend>
+
+               <div>
+                    <input type="radio" name="shipping-Option" id="seven-day-option" required="required" value = "0" />
+                    <label for="seven-day-option">7 day shipping - Free </label>
+               </div> <br>
+
+               <div>
+                    <input type="radio" name="shipping-Option" id="three-day-option" value = "5" />
+                    <label for="three-day-option">3 day shipping - $5.00 </label>
+               </div> <br>
+
+               <div>
+                    <input type="radio" name="shipping-Option" id="one-day-option" value = "50" />
+                    <label for="one-day-option">Over night shipping - $50 </label>
+               </div> <br> <br>
+
+          </fieldset>
+
+          <button type="submit" value="Submit">Checkout</button>
+          <button type="reset" value="Reset">Clear Credentials and Shipping</button>
+
+          <input name="item1count" id="item1count" hidden></input>
+          <input name="item2count" id="item2count" hidden></input>
+          <input name="item3count" id="item3count" hidden></input>
+          <input name="item4count" id="item4count" hidden></input>
+          <input name="item5count" id="item5count" hidden></input>
+          <input name="item6count" id="item6count" hidden></input>
+
+          <script type="text/javascript"
+          src="formChecker.js">
+          </script>
+     </form>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+body
+{
+
+}
+
+div
+{
+     text-align: left;
+     height: auto;
+     width: auto;
+     display: inline-block;
+}
+
+img
+{
+     height: 150px;
+     width: 250px;
+}
+
+legend
+{
+     background-color: black;
+     color: white;
+}
+
+table{
+     background-color: ;
+
+}
+
+.grid-container
+{
+     display: inline-grid;
+     grid-template-columns: 250px 250px 250px;
+     grid-template-rows: 150px 50px 25px 150px 50px 25px;
+     grid-row-gap: 5px;
+     grid-column-gap: 50px;
+}
+
+.grid-item
+{
+}
+
+#storeItem1Picture {
+     grid-area: 1 / 1 / 1 / 1;
+}
+
+#storeItem2Picture {
+     grid-area: 1 / 2 / 1 / 2;
+}
+
+#storeItem3Picture {
+     grid-area: 1 / 3 / 1 / 3;
+}
+
+#storeItem4Picture {
+     grid-area: 4 / 1 / 4 / 1;
+}
+
+#storeItem5Picture {
+     grid-area: 4 / 2 / 4 / 2;
+}
+
+#storeItem6Picture {
+     grid-area: 4 / 3 / 4 / 3;
+}
+
+#storeItem1Description {
+     grid-area: 2 / 1 / 2 / 1;
+}
+
+#storeItem2Description {
+     grid-area: 2 / 2 / 2 / 2;
+}
+
+#storeItem3Description {
+     grid-area: 2 / 3 / 2 / 3;
+}
+
+#storeItem4Description {
+     grid-area: 5 / 1 / 5 / 1;
+}
+
+#storeItem5Description {
+     grid-area: 5 / 2 / 5 / 2;
+}
+
+#storeItem6Description {
+     grid-area: 5 / 3 / 5 / 3;
+}
+
+#storeItem1Quantity {
+     grid-area: 3 / 1 / 3 / 1;
+}
+
+#storeItem2Quantity {
+     grid-area: 3 / 2 / 3 / 2;
+}
+
+#storeItem3Quantity {
+     grid-area: 3 / 3 / 3 / 3;
+}
+
+#storeItem4Quantity {
+     grid-area: 6 / 1 / 6 / 1;
+}
+
+#storeItem5Quantity {
+     grid-area: 6 / 2 / 6 / 2;
+}
+
+#storeItem6Quantity {
+     grid-area: 6 / 3 / 6 / 3;
+}
