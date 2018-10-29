@@ -25,7 +25,7 @@ elseif ($ShippingCost == 50) {
 
 $TotalCost = $item_1_count*250 + $item_2_count*200 + $item_3_count*150 + $item_4_count*350 + $item_5_count*7 + $item_6_count*1000 + $ShippingCost;
 
-echo "<div>Hello {$username} welcome to your <u><b>DOOM!!!</b></u> *cough *cough, I mean your order receipt</div>";
+echo "<div>Hello {$username} welcome to your order receipt</div>";
 echo "<div>Your password is {$password}</div>";
 
 echo "<table border='1'>";
