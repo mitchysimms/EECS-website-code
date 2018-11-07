@@ -144,9 +144,7 @@ void Test::vectorConversionTest() {
      bool pass = true;
 
      for(int i=0; (unsigned)i<testerVector.size(); i++) {
-          std::cout << "i: " << i << std::endl;
-          std::cout << "vector(" << i << ")" << testerVector.at(i) << std::endl;
-          if(testerVector.at(i) != i){
+          if(!testerList->search(testerVector.at(i))){
                pass = false;
           }
      }
