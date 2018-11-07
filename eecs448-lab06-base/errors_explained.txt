@@ -1,0 +1,5 @@
+Errors were found in:
+
+1) A list will return empty even if it has nodes
+2) removing from the back does not work
+3) removing from the front does not work
